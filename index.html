@@ -6,16 +6,31 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 50px;
-            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
             color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+            border-radius: 8px;
         }
         h1 {
             color: #2c3e50;
+            text-align: center;
+            font-size: 16px;
         }
-        p {
-            font-size: 18px;
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+        }
+        p, li {
+            font-size: 16px;
             line-height: 1.6;
         }
         a {
@@ -25,21 +40,107 @@
         a:hover {
             text-decoration: underline;
         }
-        .contact {
-            margin-top: 20px;
+        .section {
+            margin-bottom: 30px;
+        }
+        .news-item {
+            font-size: 18px;
             font-weight: bold;
+            color: #d35400; /* Highlight color for news */
+        }
+        .publication {
+            margin-bottom: 15px;
+        }
+        .pub-title {
+            font-weight: bold;
+            font-size: 1.1em;
+            color: #333;
+        }
+        .pub-links {
+            font-weight: bold;
+        }
+        ul {
+            padding-left: 20px;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to My Homepage!</h1>
-    <p>Hi! I am <strong>Weishuo Ma</strong>, an undergraduate student from the <strong>School of Electronics Engineering and Computer Science</strong>, <strong>Peking University</strong>.</p>
-    <p>My current field of interest is <strong>Graph Neural Networks</strong>.</p>
-    
-    <div class="contact">
-        <p>You can contact me via:</p>
-        <p>Email: <a href="mailto:2200013081@stu.pku.edu.cn">2200013081@stu.pku.edu.cn</a></p>
-        <p>WeChat: <strong>yiming_421</strong></p>
+
+    <div class="container">
+        <h1>Weishuo Ma</h1>
+        <p style="text-align: center; font-size: 18px;">
+            Undergraduate Student <br>
+            School of EECS, Peking University
+        </p>
+        
+        <div class="section">
+            <h2>🏆 News</h2>
+            <p class="news-item">
+                Nov 2025: Our paper, "Reconsidering the Performance of GAE in Link Prediction," won the <strong>Best Full Paper Award</strong> at CIKM 2025 in Seoul!
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>About Me</h2>
+            <p>
+                I am a senior undergraduate (and incoming PhD student) at Peking University. I am currently a research intern in Prof. Lei Zou's lab, which I will be joining as a PhD student next year. Previously, I was an undergraduate intern in Prof. Muhan Zhang's lab. My research focuses on Graph Neural Networks (GNNs), particularly on link prediction, Graph Foundational Models and Dynamic Graphs.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>Publications</h2>
+            <div class="publication">
+                <p class="pub-title">Reconsidering the Performance of GAE in Link Prediction</p>
+                <p>
+                    <strong>Weishuo Ma</strong>, Yanbo Wang, Xiyuan Wang, Muhan Zhang
+                </p>
+                <p>
+                    <em>Proceedings of the 34th ACM International Conference on Information and Knowledge Management (CIKM 2025)</em>
+                </p>
+                <p style="color: #d35400; font-weight: bold;">
+                    🏆 Best Full Paper Award 🏆
+                </p>
+                <p class="pub-links">
+                    [ <a href="https://dl.acm.org/doi/10.1145/3746252.3761108" target="_blank">Paper</a> ]
+                    [ <a href="https://github.com/GraphPKU/Refined-GAE" target="_blank">Code</a> ]
+                </p>
+            </div>
+            
+            <div class="publication">
+                <p class="pub-title">GILT: An LLM-Free, Tuning-Free Graph Foundational Model for In-Context Learning</p>
+                <p>
+                    <strong>Weishuo Ma</strong>, Yanbo Wang, Xiyuan Wang, Lei Zou,Muhan Zhang
+                </p>
+                <p>
+                    <em>arXiv Preprint</em>
+                </p>
+                <p class="pub-links">
+                    [ <a href="https://arxiv.org/abs/2510.04567" target="_blank">Paper (arXiv)</a> ] </p>
+              [ <a href="https://github.com/yiming421/inductnode" target="_blank">Code</a> ]
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Research Interests</h2>
+            <ul>
+                <li>Graph Neural Networks (GNNs)</li>
+                <li>Graph Foundational Models</li>
+                <li>Dynamic Graphs</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Links & Contact</h2>
+            <p>
+                <strong>Email:</strong> <a href="mailto:2200013081@stu.pku.edu.cn">2200013081@stu.pku.edu.cn</a>
+            </p>
+            <p>
+                <strong>GitHub:</strong> <a href="https://github.com/yiming421" target="_blank">@yiming421</a>
+            </p>
+            <p>
+                <strong>Google Scholar:</strong> <a href="https://scholar.google.com/citations?user=IXZ9KbkAAAAJ&hl=en" target="_blank">Weishuo Ma</a>
+            </p>
+        </div>
     </div>
 </body>
 </html>
